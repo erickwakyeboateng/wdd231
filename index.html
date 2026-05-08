@@ -4,11 +4,82 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>WDD 231 - Course Home Page</title>
+        <meta name="description"
+            content="Course home page for WDD 231, featuring student profile and course filtering.">
+        <meta name="author" content="Eric Kwakye Boateng">
+
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/courses.js" defer></script>
     </head>
 
     <body>
+        <header>
+            <div class="header-container">
+                <img src="images/logo.svg" alt="Site Logo" width="50" height="50">
+                <span>Eric Boateng</span>
+            </div>
+            <button id="menu" aria-label="Toggle Menu"></button>
+        </header>
 
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Home</h1>
+            <div class="grid-layout">
+                <section class="card about">
+                    <h2>About Me</h2>
+                    <p>Hello! My name is Eric. I’m a Metrics Analyst with a passion for data, technology, and building
+                        websites. I also manage
+                        social media and enjoy finding creative solutions to everyday challenges. In my free time, I
+                        like learning new skills
+                        and exploring innovative tools to make work more efficient.</p>
+                </section>
+
+                <section class="card photo">
+                    <h2>Student Photo</h2>
+                    <img src="images/profile.webp" alt="Eric Boateng" loading="lazy" width="200">
+                </section>
+
+                <section class="card certificate">
+                    <h2>Web Certificate Courses</h2>
+                    <div class="filters">
+                        <button id="all">All</button>
+                        <button id="cse">CSE</button>
+                        <button id="wdd">WDD</button>
+                    </div>
+                    <div id="course-list"></div>
+                    <p id="total-credits"></p>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/erickwakyeboateng" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn Profile" width="30" height="30">
+                </a>
+                <a href="https://github.com/erickwakyeboateng" target="_blank">
+                    <img src="images/github.svg" alt="GitHub Repository" width="30" height="30">
+                </a>
+            </div>
+            <p>&copy; <span id="currentyear"></span> Eric Kwakye Boateng | Ghana</p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 
 </html>
