@@ -20,7 +20,7 @@ footer {
   padding: 0.5rem;
 }
 
-#menu-toggle::before {
+#menu-toggle::before{
   content: "☰";
 }
 
@@ -52,16 +52,15 @@ footer {
   background-color: #1a252f;
 }
 
-#nav-list li a:hover {
-  background-color: #34495e;
-  border-radius: 4px;
-}
-
 .view-toggle {
   margin: 1rem;
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+main h1{
+  text-align:center;
 }
 
 .grid {
