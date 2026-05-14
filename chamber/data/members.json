@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Engage Now Africa",
+      "address": "10 Asafoatse Odweni Street, Osu",
+      "phone": "233 59 381 3347",
+      "website": "https://engagenowafrica.org",
+      "image": "ena.webp",
+      "membershipLevel": 3,
+      "other": "Non-Profit"
+    },
+    {
+      "name": "Fideric Foods",
+      "address": "I84 Faase Road, Teshie",
+      "phone": "+233 55 477 5921",
+      "website": "https://fideric.netlify.app/",
+      "image": "fideric.webp",
+      "membershipLevel": 2,
+      "other": "Foods"
+    },
+    {
+      "name": "Beehive Animal Feed",
+      "address": "88 Trade Route, Timbuktu",
+      "phone": "+233 50 111 2222",
+      "website": "https://beehiveanimalfeed.com/",
+      "image": "beehive.webp",
+      "membershipLevel": 1,
+      "other": "Shipping"
+    },
+    {
+      "name": "CTR Ghana",
+      "address": "24 Tradoff Street, Timbuktu",
+      "phone": "+233 23 872 9810",
+      "website": "https://ctrghana.org",
+      "image": "ctrghana.webp",
+      "membershipLevel": 3,
+      "other": "Non-Profit"
+    },
+    {
+      "name": "BYU Pathway",
+      "address": "57 Independence Avenue, Accra",
+      "phone": "+233 27 444 3333",
+      "website": "https://www.byupathway.edu/",
+      "image": "byupathway.webp",
+      "membershipLevel": 2,
+      "other": "Education"
+    },
+    {
+      "name": "Church News",
+      "address": "57 Independence Avenue, Accra",
+      "phone": "+233 24 666 7777",
+      "website": "https://newsroom.churchofjesuschrist.org/",
+      "image": "churchnews.webp",
+      "membershipLevel": 1,
+      "other": "Media"
+    },
+    {
+      "name": "Maxtaminds Solutions",
+      "address": "I84 Faase Road, Teshie",
+      "phone": "+233 59 381 3347",
+      "website": "https://www.linkedin.com/in/erickwakyeboateng/",
+      "image": "maxtaminds.webp",
+      "membershipLevel": 3,
+      "other": "Tech"
+    }
+  ]
+}

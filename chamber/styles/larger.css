@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #nav-list {
+    display: flex !important;
+    gap: 15px;
+  }
+
+  #nav-list li a {
+    border-bottom: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr;
+    align-items: center;
+  }
+}
