@@ -20,7 +20,7 @@ footer {
   padding: 0.5rem;
 }
 
-#menu-toggle::before{
+#menu-toggle::before {
   content: "☰";
 }
 
@@ -53,14 +53,21 @@ footer {
 }
 
 .view-toggle {
-  margin: 1rem;
+  margin: 1rem auto;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   gap: 10px;
+
+  button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+  
+  }
 }
 
-main h1{
-  text-align:center;
+main h1 {
+  text-align: center;
 }
 
 .grid {
