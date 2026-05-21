@@ -1,3 +1,5 @@
+import { getMembershipLevel, setupNavigation, showFooterDates } from "./modules.mjs";
+
 const apiKey = "3ee44df2a1600b010263f5101b1d44b3";
 const lat = "5.5841";
 const lon = "-0.1444";
@@ -68,9 +70,7 @@ async function getSpotlights() {
           <p>${member.address}</p>
           <p>${member.phone}</p>
           <a href="${member.website}" target="_blank">Visit Website</a>
-          <p><strong>Membership:</strong> ${
-            member.membershipLevel === 3 ? "Gold" : "Silver"
-          }</p>
+          <p><strong>Membership:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
         </section>
       `;
     });
@@ -80,18 +80,9 @@ async function getSpotlights() {
   }
 }
 
-const menuBtn = document.querySelector("#menu-toggle");
-const navList = document.querySelector("#nav-list");
-
-menuBtn.addEventListener("click", () => {
-  navList.classList.toggle("show");
-  menuBtn.classList.toggle("open");
-});
-
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
-
 document.addEventListener("DOMContentLoaded", () => {
+  setupNavigation();
+  showFooterDates();
   getWeatherData();
   getForecast();
   getSpotlights();

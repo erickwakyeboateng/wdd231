@@ -35,42 +35,14 @@
   }
 
   #hero img {
-    height: 430px;
+    height: 300px;
     object-fit: cover;
   }
 
-  .hero-text {
-    left: 3rem;
-    right: auto;
-    max-width: 520px;
-    text-align: left;
-  }
-
-  .hero-text h1 {
-    font-size: 3rem;
-  }
-
-  #events,
-  #weather {
+  .home-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 1rem;
-    text-align: left;
-  }
-
-  #events h2,
-  #weather h2 {
-    grid-column: 1 / -1;
-    text-align: center;
-  }
-
-  #weather h3 {
-    margin-top: 0;
-  }
-
-  #current-weather,
-  .forecast-card {
-    margin: 0;
   }
 
   #spotlight-container {

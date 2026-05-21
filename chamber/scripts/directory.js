@@ -1,18 +1,7 @@
+import { getMembershipLevel, setupNavigation, showFooterDates } from "./modules.mjs";
+
 const url = "data/members.json";
 const display = document.querySelector("#member-display");
-
-function getMembershipLevel(level) {
-  switch (level) {
-    case 1:
-      return "Member";
-    case 2:
-      return "Silver";
-    case 3:
-      return "Gold";
-    default:
-      return "Unknown";
-  }
-}
 
 async function getMembers() {
   try {
@@ -66,16 +55,8 @@ if (listBtn) {
   });
 }
 
-const menuBtn = document.querySelector("#menu-toggle");
-const navList = document.querySelector("#nav-list");
-
-menuBtn.addEventListener("click", () => {
-  navList.classList.toggle("show");
-  menuBtn.classList.toggle("open");
-});
-
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+setupNavigation();
+showFooterDates();
 
 if (display) {
   getMembers();
