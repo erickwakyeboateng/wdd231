@@ -52,25 +52,31 @@ function displayMembers(members) {
 const gridBtn = document.querySelector("#grid-view");
 const listBtn = document.querySelector("#list-view");
 
-gridBtn.addEventListener("click", () => {
-  display.classList.add("grid");
-  display.classList.remove("list");
-});
+if (gridBtn) {
+  gridBtn.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+  });
+}
 
-listBtn.addEventListener("click", () => {
-  display.classList.add("list");
-  display.classList.remove("grid");
-});
+if (listBtn) {
+  listBtn.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("grid");
+  });
+}
 
 const menuBtn = document.querySelector("#menu-toggle");
 const navList = document.querySelector("#nav-list");
 
 menuBtn.addEventListener("click", () => {
   navList.classList.toggle("show");
-  menuBtn.classList.toggle("open")
+  menuBtn.classList.toggle("open");
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;
 
-getMembers();
+if (display) {
+  getMembers();
+}

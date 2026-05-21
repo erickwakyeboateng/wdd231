@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Teshie Chamber of Commerce</title>
+        <meta name="description" content="Home page for the Teshie Chamber of Commerce.">
+        <meta name="author" content="Eric Kwakye Boateng">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <meta property="og:title" content="Teshie Chamber of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://erickwakyeboateng.github.io/wdd231/chamber/images/teshielogo.webp">
+        <meta property="og:url" content="https://erickwakyeboateng.github.io/wdd231/chamber/index.html">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/index.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-area">
+                <img src="images/teshielogo.webp" alt="Teshie Chamber Logo" width="50">
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle Menu"></button>
+                <ul id="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <img src="images/teshiehero.webp" alt="Teshie Community Hero">
+                <div class="hero-text">
+                    <h1>Teshie Chamber of Commerce</h1>
+                    <p>Building local business and community connections.</p>
+                    <a href="join.html" class="cta">Join the Chamber</a>
+                </div>
+            </section>
+
+            <section id="events">
+                <h2>Current Events</h2>
+                <div class="event-card">
+                    <h3>Small Business Networking Night</h3>
+                    <p>Meet local business owners and share ideas for building stronger businesses in Teshie.</p>
+                    <p><strong>Date:</strong> Friday, May 29</p>
+                </div>
+                <div class="event-card">
+                    <h3>Community Market Clean-up</h3>
+                    <p>Join chamber members as we support a clean and welcoming shopping area for the community.</p>
+                    <p><strong>Date:</strong> Saturday, June 6</p>
+                </div>
+            </section>
+
+            <section id="weather">
+                <div id="current-weather"></div>
+                <div class="forecast-card">
+                    <h3>Three Day Forecast</h3>
+                    <div id="forecast"></div>
+                </div>
+            </section>
+
+            <section id="spotlights">
+                <h2>Company Spotlights</h2>
+                <div id="spotlight-container" class="grid"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="contact">
+                <p>54 Independence Avenue, Teshie, ML 555</p>
+                <p>info@teshie.org | 233 50 596 8712</p>
+                <div class="socials">
+                    <a href="https://github.com/erickwakyeboateng" target="_blank"><img src="images/github.svg"
+                            alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/erickwakyeboateng/" target="_blank"><img
+                            src="images/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <hr>
+            <div class="dev-info">
+                <p>&copy; <span id="year"></span> Teshie Chamber | Eric Kwakye Boateng | WDD 231</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </body>
+
+</html>
