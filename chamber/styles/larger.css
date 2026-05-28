@@ -54,4 +54,15 @@
   .spotlight-card {
     margin-bottom: 0;
   }
+
+  .join-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .membership-levels {
+    padding-top: 1rem;
+  }
 }

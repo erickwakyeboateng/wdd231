@@ -233,3 +233,164 @@ section {
 .spotlight-card p {
   margin: 0.4rem 0;
 }
+
+.join-layout {
+  padding: 0 1rem 2rem;
+}
+
+.join-form {
+  padding: 1rem;
+}
+
+.join-form label {
+  display: block;
+  color: #7b0066;
+  margin-top: 1rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  padding: 0.6rem;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-left: 6px solid #777;
+  border-radius: 4px;
+}
+
+.join-form input:required {
+  border-left-color: #b00020;
+}
+
+.join-form input:required:valid {
+  border-left-color: #2f7d32;
+}
+
+.join-form input:not(:required),
+.join-form textarea {
+  border-left-color: #777;
+}
+
+.join-form input:not(:required):valid,
+.join-form textarea:valid {
+  border-left-color: #777;
+}
+
+.join-form fieldset {
+  max-width: 420px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.join-form legend {
+  color: #9c4300;
+  font-weight: 700;
+  padding: 0 0.4rem;
+}
+
+.join-form fieldset label {
+  color: #7b0066;
+  margin: 0.5rem 0;
+}
+
+.join-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 2rem;
+  padding: 0.9rem;
+  color: #fff;
+  background-color: #203846;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.membership-levels {
+  padding: 1rem;
+}
+
+.membership-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  animation: cardFade 1s ease-in;
+}
+
+.membership-card h3 {
+  color: #203846;
+}
+
+.membership-card button,
+dialog button {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  color: #fff;
+  background-color: #203846;
+  border: none;
+  border-radius: 6px;
+}
+
+dialog {
+  width: 90%;
+  max-width: 420px;
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #0000004d;
+}
+
+dialog::backdrop {
+  background-color: #00000080;
+}
+
+dialog h2 {
+  background-color: transparent;
+  color: #203846;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.thankyou-card {
+  max-width: 650px;
+  margin: 1rem auto 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.thankyou-card h2 {
+  margin-top: 1rem;
+}
+
+.thankyou-card p {
+  margin: 0.6rem 0;
+}
+
+@keyframes cardFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

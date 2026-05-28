@@ -1,0 +1,36 @@
+{
+  "levels": [
+    {
+      "id": "np",
+      "title": "NP Membership Benefits",
+      "benefits": [
+        "No membership fee for nonprofit organizations.",
+        "Includes chamber updates, community event invitations, and networking opportunities."
+      ]
+    },
+    {
+      "id": "bronze",
+      "title": "Bronze Membership Benefits",
+      "benefits": [
+        "Includes basic directory listing.",
+        "Members receive chamber updates and local business networking event invitations."
+      ]
+    },
+    {
+      "id": "silver",
+      "title": "Silver Membership Benefits",
+      "benefits": [
+        "Includes bronze membership benefits.",
+        "Members receive training invitations, event discounts, and selected advertising options."
+      ]
+    },
+    {
+      "id": "gold",
+      "title": "Gold Membership Benefits",
+      "benefits": [
+        "Includes silver membership benefits.",
+        "Members receive priority spotlight positions, special event promotion, and premium advertising."
+      ]
+    }
+  ]
+}
