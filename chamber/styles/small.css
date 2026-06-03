@@ -394,3 +394,160 @@ dialog h2 {
     transform: translateY(0);
   }
 }
+
+.visit-message {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #eef3f5;
+  border-left: 6px solid #203846;
+  font-weight: 700;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 0 1rem 2rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px #0000001a;
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.discover-card:nth-child(1) {
+  grid-area: card1;
+}
+
+.discover-card:nth-child(2) {
+  grid-area: card2;
+}
+
+.discover-card:nth-child(3) {
+  grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+  grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+  grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+  grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+  grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+  grid-area: card8;
+}
+
+.discover-card figure {
+  padding: 1rem;
+}
+
+.discover-card img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.discover-card address,
+.discover-card p {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.discover-card button {
+  margin: 0 1rem 1rem;
+  padding: 0.6rem 1rem;
+  color: #fff;
+  background-color: #203846;
+  border: none;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+
+  .discover-card img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+
+  .discover-card img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.03);
+  }
+}
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card1 card2"
+      "card3 card4 card5"
+      "card6 card7 card8";
+  }
+
+  .discover-card:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "image text"
+      "image address"
+      "image button";
+    column-gap: 1rem;
+    align-items: start;
+  }
+
+  .discover-card:nth-child(1) h2 {
+    grid-area: title;
+  }
+
+  .discover-card:nth-child(1) figure {
+    grid-area: image;
+  }
+
+  .discover-card:nth-child(1) p {
+    grid-area: text;
+    padding-top: 1rem;
+  }
+
+  .discover-card:nth-child(1) address {
+    grid-area: address;
+  }
+
+  .discover-card:nth-child(1) button {
+    grid-area: button;
+  }
+}
