@@ -35,7 +35,7 @@ function displayVisitMessage() {
     const daysBetween = Math.floor((today - lastVisit) / oneDay);
 
     if (daysBetween < 1) {
-      visitMessage.textContent = "Back so soon! Great!";
+      visitMessage.textContent = "Back so soon! Awesome!";
     } else if (daysBetween === 1) {
       visitMessage.textContent = "You last visited 1 day ago.";
     } else {
