@@ -1,0 +1,152 @@
+[
+  {
+    "id": "jollof-rice",
+    "name": "Jollof Rice",
+    "region": "Greater Accra",
+    "ingredients": ["rice", "tomatoes", "onions", "pepper"],
+    "mealTime": "Lunch or dinner",
+    "type": "Rice dish",
+    "description": "A popular one-pot rice dish cooked in tomato stew and spices.",
+    "image": "images/jollofrice.webp"
+  },
+  {
+    "id": "waakye",
+    "name": "Waakye",
+    "region": "Northern Ghana",
+    "ingredients": ["rice", "beans", "sorghum leaves", "stew"],
+    "mealTime": "Breakfast or lunch",
+    "type": "Rice and beans",
+    "description": "Rice and beans cooked together and often served with stew, egg, gari, or meat.",
+    "image": "images/waakye.webp"
+  },
+  {
+    "id": "banku",
+    "name": "Banku",
+    "region": "Greater Accra",
+    "ingredients": ["corn dough", "cassava dough", "water", "salt"],
+    "mealTime": "Lunch or dinner",
+    "type": "Swallow",
+    "description": "A smooth cooked dough usually eaten with pepper, okro soup, or grilled fish.",
+    "image": "images/banku.webp"
+  },
+  {
+    "id": "fufu",
+    "name": "Fufu",
+    "region": "Ashanti",
+    "ingredients": ["cassava", "plantain", "water", "soup"],
+    "mealTime": "Lunch or dinner",
+    "type": "Swallow",
+    "description": "A soft traditional food commonly eaten with light soup, palm nut soup, or groundnut soup.",
+    "image": "images/fufu.webp"
+  },
+  {
+    "id": "kenkey",
+    "name": "Kenkey",
+    "region": "Greater Accra",
+    "ingredients": ["corn dough", "water", "salt", "pepper"],
+    "mealTime": "Lunch or dinner",
+    "type": "Corn dish",
+    "description": "Fermented corn dough wrapped and boiled, often served with fish and pepper.",
+    "image": "images/kenkey.webp"
+  },
+  {
+    "id": "red-red",
+    "name": "Red Red",
+    "region": "Ashanti",
+    "ingredients": ["beans", "palm oil", "plantain", "onions"],
+    "mealTime": "Lunch",
+    "type": "Bean dish",
+    "description": "Beans stew cooked with palm oil and served with fried ripe plantain.",
+    "image": "images/redred.webp"
+  },
+  {
+    "id": "kelewele",
+    "name": "Kelewele",
+    "region": "Greater Accra",
+    "ingredients": ["ripe plantain", "ginger", "pepper", "oil"],
+    "mealTime": "Snack or evening meal",
+    "type": "Snack",
+    "description": "Spiced fried plantain cubes sold as a tasty street food.",
+    "image": "images/kelewele.webp"
+  },
+  {
+    "id": "tz",
+    "name": "Tuo Zaafi",
+    "region": "Northern Ghana",
+    "ingredients": ["corn flour", "cassava flour", "water", "soup"],
+    "mealTime": "Lunch or dinner",
+    "type": "Swallow",
+    "description": "A soft northern Ghanaian dish commonly served with green soup or ayoyo soup.",
+    "image": "images/tuozaafi.webp"
+  },
+  {
+    "id": "ampesi",
+    "name": "Ampesi",
+    "region": "Ashanti",
+    "ingredients": ["yam", "plantain", "cocoyam", "kontomire stew"],
+    "mealTime": "Lunch",
+    "type": "Boiled dish",
+    "description": "Boiled yam, plantain, or cocoyam served with stew or palava sauce.",
+    "image": "images/ampesi.webp"
+  },
+  {
+    "id": "akple",
+    "name": "Akple",
+    "region": "Volta",
+    "ingredients": ["corn flour", "cassava dough", "water", "salt"],
+    "mealTime": "Lunch or dinner",
+    "type": "Swallow",
+    "description": "A smooth corn-based dish usually eaten with okro soup or fish stew.",
+    "image": "images/akple.webp"
+  },
+  {
+    "id": "omotuo",
+    "name": "Omo Tuo",
+    "region": "Ashanti",
+    "ingredients": ["rice", "water", "salt", "groundnut soup"],
+    "mealTime": "Lunch or dinner",
+    "type": "Rice ball",
+    "description": "Soft rice balls often served with groundnut soup or palm nut soup.",
+    "image": "images/omotuo.webp"
+  },
+  {
+    "id": "koko",
+    "name": "Hausa Koko",
+    "region": "Northern Ghana",
+    "ingredients": ["millet", "ginger", "cloves", "sugar"],
+    "mealTime": "Breakfast",
+    "type": "Porridge",
+    "description": "A spiced millet porridge commonly served hot in the morning.",
+    "image": "images/koko.webp"
+  },
+  {
+    "id": "kokonte",
+    "name": "Kokonte",
+    "region": "Central",
+    "ingredients": ["cassava flour", "water", "soup", "salt"],
+    "mealTime": "Lunch or dinner",
+    "type": "Swallow",
+    "description": "A cassava flour dish usually eaten with groundnut soup or palm nut soup.",
+    "image": "images/kokonte.webp"
+  },
+  {
+    "id": "eba",
+    "name": "Gari Foto",
+    "region": "Greater Accra",
+    "ingredients": ["gari", "eggs", "tomatoes", "onions"],
+    "mealTime": "Breakfast or lunch",
+    "type": "Gari dish",
+    "description": "A quick dish made by mixing gari with tomato stew, eggs, and vegetables.",
+    "image": "images/garifoto.webp"
+  },
+  {
+    "id": "aprapransa",
+    "name": "Aprapransa",
+    "region": "Ashanti",
+    "ingredients": ["roasted corn flour", "palm nut soup", "spices", "fish"],
+    "mealTime": "Lunch or dinner",
+    "type": "Traditional dish",
+    "description": "A rich traditional dish made with roasted corn flour and palm nut soup.",
+    "image": "images/aprapransa.webp"
+  }
+]

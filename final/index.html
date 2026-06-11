@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore popular Ghanaian local foods, ingredients, and cultural favorites.">
+    <meta name="author" content="Boateng Eric">
+    <meta property="og:title" content="Ghanaian Local Food Guide">
+    <meta property="og:description" content="A beginner-friendly guide to Ghanaian local dishes and food culture.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ghanafoodshero.webp">
+    <title>Ghanaian Local Food Guide | Home</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a class="brand" href="index.html">
+          <img src="images/favicon.svg" alt="" width="36" height="36">
+          <span>Ghanaian Local Food Guide</span>
+        </a>
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul id="primary-nav" class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="guide.html">Food Guide</a></li>
+          <li><a href="suggest.html">Suggestions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Discover Ghanaian Local Foods</h1>
+          <p>Learn about traditional dishes, common ingredients, and simple food recommendations from Ghana.</p>
+          <a class="button" href="guide.html">View Food Guide</a>
+        </div>
+        <img src="images/ghanafoodshero.webp" alt="Illustration of Ghanaian dishes on a table" width="900" height="560">
+      </section>
+
+      <section class="intro-grid" aria-labelledby="site-purpose">
+        <div>
+          <h2 id="site-purpose">Simple Food Learning</h2>
+          <p>This website shares beginner-friendly information about Ghanaian foods such as jollof rice, waakye, banku,
+            fufu, and kenkey. Each food card includes ingredients, region, meal time, and a short description.</p>
+        </div>
+        <div class="highlight">
+          <h2>What You Can Do</h2>
+          <ul>
+            <li>Browse 15 Ghanaian food items.</li>
+            <li>Open a modal for more details.</li>
+            <li>Save favorite foods in your browser.</li>
+            <li>Suggest another food using the form.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="featured-title">
+        <div class="section-heading">
+          <h2 id="featured-title">Featured Foods</h2>
+          <a href="guide.html">See all foods</a>
+        </div>
+        <div id="featured-foods" class="food-grid"></div>
+      </section>
+
+      <dialog id="food-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-content">
+          <button id="close-dialog" class="close-button" type="button" aria-label="Close food details">X</button>
+          <img id="dialog-image" src="images/jollofrice.webp" alt="" width="640" height="400">
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-description"></p>
+          <dl>
+            <div>
+              <dt>Region</dt>
+              <dd id="dialog-region"></dd>
+            </div>
+            <div>
+              <dt>Ingredients</dt>
+              <dd id="dialog-ingredients"></dd>
+            </div>
+            <div>
+              <dt>Meal Time</dt>
+              <dd id="dialog-meal"></dd>
+            </div>
+          </dl>
+        </div>
+      </dialog>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Ghanaian Local Food Guide</p>
+      <p>Last modified: <span id="lastmodified"></span></p>
+      <p><a href="attributions.html">Attributions</a> | <a
+          href="https://www.loom.com/share/7cf349c717db4cc1b7c6035f0f7c5210" target="_blank" rel="noopener">Video
+          Demo</a></p>
+    </footer>
+  </body>
+
+</html>

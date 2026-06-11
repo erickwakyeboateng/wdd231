@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suggest a Ghanaian local food to add to the Ghanaian Local Food Guide.">
+    <meta name="author" content="Boateng Eric">
+    <meta property="og:title" content="Suggest a Ghanaian Food">
+    <meta property="og:description" content="Share a Ghanaian food suggestion for the guide.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ghanafoodshero.webp">
+    <title>Ghanaian Local Food Guide | Suggestions</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/suggest.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="site-nav">
+        <a class="brand" href="index.html">
+          <img src="images/favicon.svg" alt="" width="36" height="36">
+          <span>Ghanaian Local Food Guide</span>
+        </a>
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul id="primary-nav" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">Food Guide</a></li>
+          <li><a href="suggest.html" aria-current="page">Suggestions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <h1>Suggest a Food</h1>
+        <p>Use this form to recommend a Ghanaian food for the guide.</p>
+      </section>
+
+      <form class="suggest-form" action="form-action.html" method="get">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="food">Food Name</label>
+        <input id="food" name="food" type="text" required>
+
+        <label for="region">Region</label>
+        <select id="region" name="region" required>
+          <option value="">Choose a region</option>
+          <option value="Greater Accra">Greater Accra</option>
+          <option value="Ashanti">Ashanti</option>
+          <option value="Northern Ghana">Northern Ghana</option>
+          <option value="Volta">Volta</option>
+          <option value="Central">Central</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="reason">Why should this food be added?</label>
+        <textarea id="reason" name="reason" rows="5" required></textarea>
+
+        <input id="timestamp" name="timestamp" type="hidden">
+        <button class="button" type="submit">Send Suggestion</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Ghanaian Local Food Guide</p>
+      <p>Last modified: <span id="lastmodified"></span></p>
+      <p><a href="attributions.html">Attributions</a> | <a
+          href="https://www.loom.com/share/7cf349c717db4cc1b7c6035f0f7c5210" target="_blank" rel="noopener">Video
+          Demo</a></p>
+    </footer>
+  </body>
+
+</html>

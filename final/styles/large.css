@@ -1,0 +1,28 @@
+﻿@media (min-width: 700px) {
+  .menu-button {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    position: static;
+    background: transparent;
+  }
+
+  .nav-links a {
+    border-radius: 6px;
+  }
+
+  .brand span {
+    max-width: none;
+  }
+
+  .hero,
+  .intro-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .food-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
